@@ -7,10 +7,10 @@ from collections import namedtuple
 Conv1Input = namedtuple('Conv1Input', ['name', 'n', 'x'])
 '''1D Convolutional input'''
 
-Conv1Filter = namedtuple('Conv1Filter', ['name', 'n', 'x', 'y'])
+Conv1 = namedtuple('Conv1', ['name', 'n', 'x'])
 '''1D Convolutional filter'''
 
-Pool1 = namedtuple('Pool1', ['name', 'x', 'y'])
+Pool1 = namedtuple('Pool1', ['name', 'x', 's_x'])
 '''1D pooling operation'''
 
 
@@ -18,10 +18,10 @@ Pool1 = namedtuple('Pool1', ['name', 'x', 'y'])
 Conv2Input = namedtuple('Conv2Input', ['name', 'n', 'x', 'y'])
 '''2D Convolutional input'''
 
-Conv2Filter = namedtuple('Conv2Filter', ['name', 'n', 'x', 'y'])
+Conv2 = namedtuple('Conv2', ['name', 'n', 'x', 'y'])
 '''2D Convolutional filter'''
 
-Pool2 = namedtuple('Pool2', ['name', 'x', 'y'])
+Pool2 = namedtuple('Pool2', ['name', 'x', 'y', 's_x', 's_y'])
 '''2D pooling operation'''
 
 # Dense networks

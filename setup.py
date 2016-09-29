@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 import imp
 
 version = imp.load_source('dapr.version', 'dapr/version.py')
-description = 'Deep architecture plot rendering',
+description = 'Deep architecture plot rendering'
 
 setup(
     name='dapr',
@@ -31,6 +31,7 @@ setup(
     license='ISC',
     install_requires=[
         'matplotlib >= 1.5',
+        'numpy',
         'six',
     ],
     extras_require={
